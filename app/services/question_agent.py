@@ -55,7 +55,7 @@ Generate the 5 interview questions based on the requirements."""
 
         # Step 3: Call OpenAI API
         response = await client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}

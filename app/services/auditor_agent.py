@@ -71,7 +71,7 @@ Evaluate the integrity of the evaluation based on the instructions."""
 
     try:
         response = await client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
